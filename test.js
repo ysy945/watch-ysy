@@ -12,19 +12,19 @@ const { resolve } = require("path");
 // cancel();
 // }, 5000);
 
-// watch.watchFile(
-// "./test.js",
-// function (data) {
-// console.log(data);
-// },
-// { monitorTimeChange: true },
-// function (cancel) {
-// console.log("111");
-// setTimeout(() => {
-// cancel();
-// }, 5000);
-// }
-// );
+watch.watchFile(
+  "./test.js",
+  function (data) {
+    console.log(data);
+  },
+  { monitorTimeChange: true },
+  function (cancel) {
+    console.log("111");
+    setTimeout(() => {
+      cancel();
+    }, 5000);
+  }
+);
 
 // watch.watchDir(
 // "./a",
@@ -59,11 +59,11 @@ const { resolve } = require("path");
 // }
 // );
 
-const cancel = watch.watchSync(
-  ["./a", "./lib"],
-  function (data) {
-    console.log(data);
-  },
-  { monitorTimeChange: true, deep: true }
-);
+// const cancel = watch.watchSync(
+//   ["./a", "./lib"],
+//   function (data) {
+//     console.log(data);
+//   },
+//   { monitorTimeChange: true, deep: true }
+// );
 // cancel();
