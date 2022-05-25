@@ -1,0 +1,14 @@
+{
+  "name": "watch-ysy",
+  "version": "1.2.0",
+  "description": "this is a watch file package.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "author": "little-fish",
+  "license": "ISC"
+}
